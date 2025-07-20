@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/auth.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+        <img src="./images/logo.png" alt="logoVideoBelajar">
+        </div>
+    </header>
+
+    <!-- Form Header -->
+    <main class="form-main-container">
+    <div class="form-container">
+     <div class="form-header">
+        <h1>Pendaftaran Akun</h1>
+        <p >Yuk, daftarkan akunmu sekarang juga!</p>
+    </div>
+
+    <!-- Form Body -->
+    <form class="form-body">
+        <div class="form-fullname">
+            <label for="email">Nama Lengkap<span>*</span></label>
+            <input type="fullname" id="fullname" name="fullname" required/>
+        </div>
+
+        <div class="form-email">
+            <label for="email">E-Mail<span>*</span></label>
+            <input type="email" id="email" name="email" required/>
+        </div>
+
+         <div class="form-gender">
+            <label for="gender">Jenis Kelamin<span>*</span></label>
+            <input type="gender" id="gender" name="gender" required/>
+        </div>
+
+        <div class="form-phone">
+         <label for="phone">No. Hp <span>*</span></label>
+              <div class="phone-wrapper">
+                     <div class="country-code">
+                     <img src="https://flagcdn.com/w40/id.png" alt="ID Flag">
+                     <span>+62</span>
+                     <span class="dropdown-icon">▼</span>
+                    </div>
+                 <input type="tel" id="phone" name="phone" placeholder="8123456789" require/>
+              </div>
+        </div>
+
+        <div class="form-password">
+            <label for="password">Kata Sandi<span>*</span></label>
+            <input type="password" id="password" name="password" required/>
+            <div class="password-icon">
+                <img src="./images/logoPassword.png" alt="logoVideoBelajar">
+            </div>
+        </div>
+
+          <div class="form-password">
+            <label for="confirmPassword">Konfirmasi Kata Sandi<span>*</span></label>
+            <input type="confirmPassword" id="confirmPassword" name="confirmPassword" required/>
+            <div class="password-icon">
+                <img src="./images/logoPassword.png" alt="logoVideoBelajar">
+            </div>
+        </div>
+        
+        <a class="form-forgot-password" href="#">Lupa Password?</a>
+        <button class="form-button-login" type="submit">Masuk</button>
+        <button class="form-button-register" type="button">Daftar</button>
+
+        <div class="form-or">
+            <div class="form-or-2"></div><p>atau</p><div class="form-or-2"></div>
+        </div>
+
+        <button class="form-button-google" type="button"><img src="./images/logoGoogle.png" alt="logoGoogle" style="width: 15px"> Daftar dengan Google</button>
+    </form>
+    </div>
+    </main>
+</body>
+</html>

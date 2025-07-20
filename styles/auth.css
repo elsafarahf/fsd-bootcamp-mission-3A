@@ -1,0 +1,317 @@
+@import url(/styles/main.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.form-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #f1f1f1;
+    max-width: 400px;
+    min-width: 300px;
+    width: 100%;
+}
+
+.form-header {
+    text-align: center;
+}
+
+.form-header h1 {
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.form-header p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.form-fullname label,
+.form-gender label,
+.form-email label,
+.form-password label {
+    font-size: 14px;
+}
+
+.form-fullname span,
+.form-gender span,
+.form-email span,
+.form-password span {
+    color: #ff5c2b;
+    margin-left: 2px;
+}
+
+.form-fullname input,
+.form-gender input,
+.form-email input,
+.form-password input {
+    width: 100%;
+    height: 48px;
+    padding: 4px 10px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Label styling */
+.form-phone label {
+  font-size: 14px;
+  color: #666;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-phone label span {
+  color: #ff5c2b;
+  margin-left: 2px;
+}
+
+.phone-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+}
+
+.country-code {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  gap: 8px;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  height: 48px;
+  box-shadow: inset 0 0 0 1px #f0f0f0;
+}
+
+.country-code img {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.dropdown-icon {
+  font-size: 12px;
+  color: #666;
+  margin-left: auto;
+}
+
+.phone-wrapper input {
+  flex: 2;
+  height: 48px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0 12px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.form-password {
+    position: relative;
+}
+
+.password-icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-10%);
+}
+
+.form-forgot-password {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: rgba(51, 51, 51, 0.68);
+    font-size: 13px;
+}
+
+.form-button-login {
+    background-color: rgba(62, 207, 76, 1);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form-button-register {
+    background-color: rgba(226, 252, 217, 0.8);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #3ecf4c;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form-or {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+.form-or p {
+    font-size: 12px;
+    color: #999;
+}
+
+.form-or-2 {
+    height: 2px;
+    width: 240px;
+    background-color: #f1f1f1;
+}
+
+.form-button-google {
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form-button-google img {
+    width: 15px;
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN SECTION
+------------------------------ */
+
+/* Tablet (≤ 768px) */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 16px;
+        width: 95%;
+    }
+
+    .form-body {
+        gap: 16px;
+    }
+
+    .form-or {
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    .form-or-2 {
+        flex: 1;
+        height: 1px;
+        background-color: #ccc;
+    }
+
+    .form-button-login,
+    .form-button-register,
+    .form-button-google,
+    .form-fullname input,
+    .form-gender input,
+    .form-password input,
+    .form-email input,
+    .phone-wrapper input {
+        width: 100%;
+    }
+
+    .country-code {
+        min-width: 90px;
+    }
+
+    .password-icon {
+        right: 8px;
+    }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+    .form-header h1 {
+        font-size: 20px;
+    }
+
+    .form-header p {
+        font-size: 13px;
+    }
+
+    .form-body {
+        gap: 14px;
+    }
+
+    .form-or {
+        flex-direction: row;
+    }
+
+    .form-or-2 {
+        flex: 1;
+    }
+
+    .form-button-login,
+    .form-button-register,
+    .form-button-google {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .country-code {
+        padding: 6px 10px;
+        min-width: 80px;
+    }
+
+    .country-code span {
+        font-size: 14px;
+    }
+
+    .phone-wrapper {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .password-icon img {
+        width: 20px;
+    }
+
+    .form-main-container{
+        padding: 12px;
+    }
+
+    .form-container {
+        border-radius: 8px;
+    }
+
+    input::placeholder {
+        font-size: 13px;
+    }
+}

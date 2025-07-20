@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100vw;
+    min-width: 300px;
+    padding: 16px;
+    background-color: white;
+    padding-left: 120px;
+    padding-right: 120px;
+
+}
+
+.header-logo {
+    width: 152px;
+    height: 42px;
+
+}
+
+body {
+   background-color: rgb(247, 241, 229);
+}
+
