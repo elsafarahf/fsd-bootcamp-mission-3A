@@ -19,6 +19,24 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    border-radius: 3px;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
 
 .content-container {
   display: flex;
@@ -420,4 +438,238 @@ color: rgba(246, 73, 32, 1);
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     color: rgba(51, 51, 51, 0.68);
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN SECTION
+------------------------------ */
+
+
+/* Responsive for Tablet (width <= 1024px) */
+@media screen and (max-width: 1024px) {
+  .header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .section {
+    padding: 0 40px;
+  }
+
+  .content {
+    max-width: 90%;
+    background-size: cover;
+  }
+
+  .content-text {
+    padding: 0 60px;
+  }
+
+  .content-text h1 {
+    font-size: 32px;
+  }
+
+  .content-text .btn-header {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .section-categories {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .card-image-course {
+    width: 100%;
+  }
+
+  .content-section {
+    max-width: 90%;
+    background-size: cover;
+  }
+
+  .content-text-section {
+    max-width: 90%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  .footer-cointainer-category {
+    flex-wrap: wrap;
+  }
+
+  .content-subscribe {
+    flex-direction: column;
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .content-subscribe button {
+    width: 100%;
+  }
+
+  .main-body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* Responsive for Phone (width <= 768px) */
+@media screen and (max-width: 768px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .section {
+    padding: 0 20px;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .burger-menu {
+    display: flex;
+    z-index: 10;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 5;
+  }
+
+  .content {
+    height: auto;
+    padding: 40px 0;
+    margin-top: 32px;
+    max-width: 95%;
+  }
+
+  .content-text {
+    padding: 0 20px;
+  }
+
+  .content-text h1 {
+    font-size: 24px;
+  }
+
+  .content-text p {
+    font-size: 14px;
+  }
+
+  .content-text .btn-header {
+    width: 100%;
+    font-size: 14px;
+    height: auto;
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .section-header h3 {
+    font-size: 20px;
+  }
+
+  .section-header p {
+    font-size: 14px;
+  }
+
+  .section-categories {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
+    white-space: nowrap;
+    padding-bottom: 8px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card-text h4 {
+    font-size: 16px;
+  }
+
+  .content-section {
+    height: auto;
+    padding: 40px 20px;
+    margin-top: 40px;
+    max-width: 95%;
+  }
+
+  .content-text-section h5 {
+    font-size: 16px;
+  }
+
+  .content-text-section h3 {
+    font-size: 22px;
+  }
+
+  .content-text-section p {
+    font-size: 14px;
+  }
+
+  .content-subscribe {
+    padding: 15px;
+  }
+
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-container {
+    padding: 0;
+  }
+
+  .footer-logo {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .footer-logo img {
+    max-width: 150px;
+  }
+
+  .footer-cointainer-category {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .footer-category {
+    width: 100%;
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
